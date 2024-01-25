@@ -1,20 +1,24 @@
 export interface ButtonProps {
     /**
-     * Is this the principal call to action on the page?
+     * Disable state of button
      */
-    primary?: boolean;
-    /**
-     * What background color to use
-     */
-    backgroundColor?: string;
-    /**
-     * How large should the button be?
-     */
-    size?: 'small' | 'medium' | 'large';
+    disabled: boolean;
     /**
      * Button contents
      */
     label: string;
+    /**
+     * Button contents
+     */
+    loading: boolean;
+    /**
+     * Set the size of button
+     */
+    size?: 'large' | 'middle' | 'small';
+    /**
+     * Set button type
+     */
+    type?: 'default' | 'primary' | 'dashed' | 'link' | 'text';
     /**
      * Optional click handler
      */

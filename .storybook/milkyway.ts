@@ -6,4 +6,7 @@ export default create({
     brandUrl: 'https://storybook.js.org/images/placeholders/350x150.png',
     brandImage: 'https://storybook.js.org/images/placeholders/350x150.png',
     brandTarget: '_self',
-  });
+});
+
+// Refrence
+// https://storybook.js.org/docs/configure/theming

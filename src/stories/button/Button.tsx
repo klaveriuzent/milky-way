@@ -1,25 +1,31 @@
 import './button.scss';
 import { ButtonProps } from './Button.interface';
+import { Button as AntdButton, ButtonProps as AntdButtonProps, ConfigProvider } from 'antd';
+import { colorGroup, border } from '../../theme';
 
 /**
  * Primary UI component for user interaction
  */
 export const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
+  disabled,
   label,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
+    <ConfigProvider
+      theme={{
+        token: {
+          // Seed Token
+          colorPrimary: colorGroup.Primary,
+          borderRadius: border.radius,
+        },
+      }}
     >
-      {label}
-    </button>
+      <AntdButton className='storybook-button'
+        {...props as AntdButtonProps}
+      >
+        {label}
+      </AntdButton>
+    </ConfigProvider>
   );
 };

@@ -4,7 +4,7 @@ export default create({
     base: 'light',
     brandTitle: 'MilkyWay Storybook',
     brandUrl: 'https://storybook.js.org/images/placeholders/350x150.png',
-    brandImage: 'https://storybook.js.org/images/placeholders/350x150.png',
+    brandImage: './public/milkyway-logo.svg',
     brandTarget: '_self',
 
     // Typography
@@ -12,7 +12,7 @@ export default create({
     fontCode: 'Orbitron, monospace',
 
     colorPrimary: '#3A10E5',
-    colorSecondary: '#585C6D',
+    colorSecondary: '#212233',
 
 });
 

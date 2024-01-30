@@ -1,6 +1,7 @@
 import './button.scss';
 import { ButtonProps } from './Button.interface';
 import { Button as AntdButton, ButtonProps as AntdButtonProps, ConfigProvider } from 'antd';
+import { colorGroup, border } from '../../theme';
 
 /**
  * Primary UI component for user interaction
@@ -15,11 +16,8 @@ export const Button = ({
       theme={{
         token: {
           // Seed Token
-          colorPrimary: '#00b96b',
-          borderRadius: 2,
-
-          // Alias Token
-          colorBgContainer: '#f6ffed',
+          colorPrimary: colorGroup.Primary,
+          borderRadius: border.radius,
         },
       }}
     >

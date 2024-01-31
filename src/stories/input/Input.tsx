@@ -6,8 +6,6 @@ import { InputProps } from './Input.interface';
  * Primary UI component for user interaction
  */
 export const Input = ({
-  disabled = false,
-  size = 'middle',
   ...props
 }: InputProps) => {
   return (

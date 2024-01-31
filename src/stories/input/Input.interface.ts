@@ -11,4 +11,20 @@ export interface InputProps {
      * Set the size of Input
      */
     size?: 'large' | 'middle' | 'small';
+    /**
+     * contents
+     */
+    status?: 'error' | 'warning';
+    /**
+     * contents
+     */
+    showCount?: boolean;
+    /**
+     * contents
+     */
+    defaultValue?: string;
+    /**
+     * Set the variant of Input
+     */
+    variant?: 'outlined' | 'borderless' | 'filled';
 }

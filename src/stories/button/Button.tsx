@@ -6,10 +6,6 @@ import { colorGroup, border } from '../../theme';
  * Primary UI component for user interaction
  */
 export const Button = ({
-  disabled = false,
-  loading = false,
-  size = 'middle',
-  type = 'default',
   label,
   ...props
 }: ButtonProps) => {

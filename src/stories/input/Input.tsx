@@ -6,6 +6,7 @@ import { InputProps } from './Input.interface';
  * Primary UI component for user interaction
  */
 export const Input = ({
+  placeholder = '',
   ...props
 }: InputProps) => {
   return (
@@ -18,7 +19,9 @@ export const Input = ({
         },
       }}
     >
-        <AntdInput {...props as AntdInputProps} />
+        <AntdInput
+          placeholder = {placeholder}
+          {...props as AntdInputProps} />
     </ConfigProvider>
   );
 };

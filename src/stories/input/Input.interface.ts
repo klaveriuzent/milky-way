@@ -1,10 +1,10 @@
 export interface InputProps {
-    /**
-     * Disable state of button
+    /*
+     * Disable state of Input
      */
     disabled: boolean;
     /**
-     * Button contents
+     * contents
      */
-    label: string;
+    placeholder: string;
 }

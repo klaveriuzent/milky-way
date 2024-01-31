@@ -1,4 +1,3 @@
-import './button.scss';
 import { ButtonProps } from './Button.interface';
 import { Button as AntdButton, ButtonProps as AntdButtonProps, ConfigProvider } from 'antd';
 import { colorGroup, border } from '../../theme';
@@ -21,7 +20,7 @@ export const Button = ({
         },
       }}
     >
-      <AntdButton className='storybook-button'
+      <AntdButton
         {...props as AntdButtonProps}
       >
         {label}

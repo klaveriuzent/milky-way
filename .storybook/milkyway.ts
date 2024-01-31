@@ -1,6 +1,7 @@
 import { create } from '@storybook/theming/create';
 
 export default create({
+    //Theme
     base: 'light',
     brandTitle: 'MilkyWay Storybook',
     brandUrl: 'https://storybook.js.org/images/placeholders/350x150.png',
@@ -11,9 +12,9 @@ export default create({
     fontBase: '"Roboto", sans-serif',
     fontCode: 'Orbitron, monospace',
 
+    //
     colorPrimary: '#3A10E5',
     colorSecondary: '#212233',
-
 });
 
 // Refrence
